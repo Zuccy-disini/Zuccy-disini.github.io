@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - The Excel Botique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Header Section -->
+     <header class="header">
+        <div class="logo">The Excel Botique</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main">
+        <div class="content">
+            <!-- Image Section -->
+            <div class="image-section">
+                <img src="C:\Users\Alfit\OneDrive\Documents\Tugas\UAS WEB\code\kemeja-coklat.jpg" 
+                     alt="Kemeja Coklat" class="shirt-image">
+            </div>
+
+            <!-- Description Section -->
+            <div class="description-section">
+                <p>
+                    Tunjukkan gaya keren Anda dengan kaos premium ini!<br>
+                    • Desain Depan: Minimalis dan kekinian<br>
+                    • Material: 100% katun berkualitas tinggi, nyaman dipakai sepanjang hari.<br>
+                    • Warna: Coklat elegan yang cocok untuk berbagai acara dan outfit.<br>
+                    • Ukuran: Tersedia dalam berbagai ukuran (S, M, L, XL, XXL).
+                </p>
+                <button class="order-button" onclick="sendWhatsAppMessage()">Pesan</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        function sendWhatsAppMessage() {
+            // Nomor WhatsApp tujuan (ganti dengan nomor Anda)
+            const phoneNumber = "6289514996506"; 
+
+            const message = encodeURIComponent("Apakah produk baju Speculator Jackpot masih ada?");
+
+             
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+             
+            window.open(whatsappURL, "_blank");
+        }
+    </script>
+</body>
+</html>
